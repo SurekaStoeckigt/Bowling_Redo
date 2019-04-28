@@ -2,11 +2,11 @@ function Frame(pins_standing){
   this._bowls = [];
   this._bonusBowls = [];
   this._pins = [];
-  // pins_standing = new Pin();
+  pins_standing = new Pin();
 
-  // for (var i = 0; i < 10; i ++){
-  //   this._pins.push(pins_standing)
-  // };
+  for (var i = 0; i < 10; i ++){
+    this._pins.push(pins_standing)
+  };
 
 Frame.prototype.bowl = function(pins_hit){
     this.bowlValidation(pins_hit);
@@ -63,20 +63,4 @@ Array.prototype.sum = function(){
   return sum;
 };
 
-// Frame.prototype.sparePins = function(pins_hit){
-//   return this._pins.sum();
-// }
-//
-// // Frame.prototype.sparePins = function(pins_hit){
-// //   pins = 10 - pins_hit;
-// //   return pins
-// // };
-//
-// // Frame.prototype.bonusBowl = function(pins_hit){
-// //   if(this._bowls.length === 2 && (this.isSpare() || this.isStrike())){
-// //     this._bonusBowls.push(pins_hit);
-// //   } else {
-// //     return ('Game Over');
-// //   };
-// // };
 };
